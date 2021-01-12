@@ -1,0 +1,89 @@
+﻿CPSC 1050 		Jan 6th 2020
+
+Pre-Class Notes
+
+“We will Study 16 Chapters...”
+    • Chapter 1 – History
+    • Chapters 2 & 3 – Data as 1s & 0s
+    • Chapters 4 & 5 – Chips & Circuits
+    • Chapters 6 to 9 – Instructions
+    • Chapters 10 to 11 – Linux & Windows
+    • Chapter 12 – Excel & Database
+    • Chapters 15 & 16 – WWW & Networks
+    • <
+      
+    • Abstraction – Example, when a user uses chrome they do not need to code. Abstraction is the process of serving a complex task with a simple UI that does not require technical knowledge.
+        ◦ “If you want to drive, do you need to know how the engine works?”
+    • A Computing System - Not just a single computer but is a dynamic (changing) entity that solves problems and interacts with it’s environment. In all a Computing System can be separated in three parts, those are..
+        1. Hardware – Any physical component in the computer itself, and attached to. Examples include... Motherboard, USB Ports, touch pad, microphone, cooling pad, fans, extra monitor, mouse, keyboard etc
+        2. Software – A collection of programs that provide the instructions for a computer to execute and operate.
+        3. Data – The heart of the computing system. Without Data the Hardware & Software are useless.
+
+History Of Computers
+
+    • Muhammad Al-Khwarizmi
+        ◦ He was a 9th century Persian mathematician & astronomer.
+        ◦ Developed the concept of an algorithm.
+        ◦ Introduced Algebra.
+        ◦ Create the concept of the number 0 & negative numbers.
+        ◦ He is considered the “father of algebra” & the “grandfather of computer science”
+Binary System
+    • The base of computer systems: 1s and 0s.
+    • Developed by Gottfried Leibniz, 17th century German philosopher.
+Boolean Algebra
+    • Used to represent circuits
+    • Model developed by George Boole, a British 19th century mathematician
+Computational Devices
+	Abacus
+    • First appearance in the 16th century
+    • Early computational device to record values and perform basic arithmetic
+	Pascaline
+    • Early mathematical calculator
+    • Could perform addition and subtraction
+    • Invented by French mathematician Blaise Pascal in the 17th century
+    • Later on, Gottfried Leibniz (of Binary System fame) modified the device to additionally perform multiplication.
+Programming
+    • Punch cards were used in early programming (a perforated card)
+    • They represented 1s and 0s (?)
+    • First used by Joseph Jacquard in Jacquard’s Loom for weaving cloth.
+        ◦ Which dictates a pattern into the cloth
+First Steps Into Computers
+    • Not much happened until the 19th century.
+    • Then, British mathematician Charles Babbage designed the Analytical Engine.
+        ◦ First mechanical computer.
+        ◦ included many of computer components such as memory and input.
+        ◦ But... too complex to be built!
+        ◦ Charles Babbage is considered “The father of Computers”.
+	Ada Lovelace
+    • The first programmer
+    • English mathematician and writer
+    • Extended the ideas of Charles Babbage
+    • Developed the concept of loops
+    • There was a programming language named after Ada
+Early Computers
+    • Lots more happened in the 20th century...
+	Herman Hollerith
+    • Developed the first Electro-Mechanical Tabulator
+        ◦ Designed to assist in summarizing information stored on punched cards
+        ◦ Formed the company IBM
+	Alan Turing
+    • Invented the Turing Machine, a mathematical model
+        ◦ Foundation of computing theory / Code breakers
+First Programmable Computers
+	Harvard Mark 1 (1944)
+    • From IBM given to Harvard
+	ENIAC (1946) / EDVAC (1950)
+    • John von Neumann worked on both
+	UNIVAC 1 (1951)
+    • First commercial computer used for (?)
+	Colossus (1943)
+		US Census
+The era of early computers, had them the size of a room! After this, this practice ended...
+"I think there is a world market for maybe five computers."
+- Thomas Watson, president of IBM, 1943
+But a new era began in mathematics, physics, engineering and economics. Who’s focus was not only on faster devices but also on developing more productive components.
+
+The following “generations” are based on the technologies they use. First we will look at the hardware generations, then we will go on to software generations.
+
+
+

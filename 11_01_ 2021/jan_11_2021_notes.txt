@@ -1,0 +1,120 @@
+﻿Jan 11 2021 CPSC 1050 W01
+
+1. Quiz next week on Wed in class. Exact time will be announced later on. It will be based on lab 1.
+2. for all labs have a worksheet, please submit the pdf form of the completed document.
+3. complete biocards ASAP.
+4. help center will be available starting wed jan 13 2021
+5. d2l submissions can be multiple times – the latest one will be the current copy
+6. time table and duration of classes/labs 
+7. have you all downloaded the text’s 7th
+
+-
+
+Data Representation using computers.
+	The first one is Numbers and in fact non negative integers
+	The basic piece of information is a Bit or a 0 or 1.
+	All the data has to be converted to a string of 0s and 1s.
+	
+
+	1310 = 11012
+
+375 = 3 x 102 + 7 x 101  + 5 x 100  = Polynominal Expansion
+
+64213 = 6 x 132 + 4 x 131 + 2 x 130 = 106810 Polynomial Expansion gives the value in Decimal / Base 10.
+
+In Base 13, there are 13 digits (0-C)
+
+Base 16, there are 16 digits (0-F)
+
+-
+
+11012 = 1 x 20 + 0 x 21 + 1 x 22 + 1 x 23 =  1310 
+This is converting a Binary number to a Decimal using Polynomial Expansion.
+
+-
+101 0112 = 538
+In Hex we group in groups of 4 from right to left
+
+0 0 1 0  1 0 1 1 = ?16
+8 4 2 1  8 4 2 1
+2 + (8+2+1) = 2B16
+
+F is the largest digit in Hexadecimal corresponds to 1111 which is 15
+E Corresponds to 14 and is 1110 in binary
+
+Hex Digits	
+0	0000
+1	0001
+2	0010
+3	0011
+4	0100
+5	0101
+6	0110
+7	0111
+8	1000
+9	1001
+A	1010
+B	1011
+C	1100
+D	1101
+E	1111
+F	10000
+
+Adding Numbers – base 10
+
+	1	1
+	1	3	7	
+	2	8	5	
+	==================
+	4	2	2
+
+Binary Add:ition:
+			1	1		1
+			1	1	1	0	1
+			0	1	1	0	1
+		===========================================
+		1	0	1	0	1	0
+
+-
+
+Polynomial Expansion
+    • 42 in base 10 has a polynomial expansion
+    • 4*10^1 + 2*10^0 = 4210
+    • 1011 in base 2, has a polynomial expansion
+    • (right to left) 1 x 20 + 1 x 21 + 0 x 22 + 1 x 23 = 
+    • Polynomial Expansion is the definition of a non-negative integer
+    • Has the same format in any base, always use to get the literal number
+Quotient Remainder Algorithm
+	Quotient	Remainder
+	42		
+21	0l
+10	1
+5	0
+2	1
+1	0
+0	1
+
+Therefore 4210 in Decimal is 1010102 in Binary.
+If we write the polynomial expansion of 1010102 we are doing the reverse operations to get back to 4210.
+Bit Grouping
+1010102 in Binary, what is it in Octal using Bit grouping?
+1	0	1		0	1	0
+4	2	1		4	2	1
+======================================================
+= 528 in Octal
+0	0	1	0		1	0	1	0
+8	4	2	1		8	4	2	1
+====================================================================
+= 2A16 in Hexadecimal
+Use Polynomial Expansion to get the Decimal.
+A x 160 = 10
+2 x 161 = 32
+=============
+= 4210
+-
+Extra:
+Write out the answers in the lab, all the equations 
+show your carries! 
+
+
+
