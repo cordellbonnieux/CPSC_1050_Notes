@@ -1,0 +1,55 @@
+Quiz next Wednesday, on the material of Chapter 2 and Lab 1
+
+When we convert from base 10 to base 2, we use the Quotient Remainder Algorithm
+
+The book was translated to Latin by Fibonachi
+    Before him roman numerals were used in europe
+    He translated the Arabic book into Latin which uses positional numbers
+
+-
+
+ASCII
+early computer table very old
+how to represent the characters on the key board (ascii keys)
+has decimal, hex, octal, html, Chr(what we see on the keys)
+lowercase and uppercase have different values (think of camelCase!)
+we will only focus on ascii table, not extended ascii table.
+
+-
+
+How to calculate 2's complement
+take the positive representation, flip the bits and add 1
+Negative integers are represented in 2's complement
+We restrict ourselves to a Byte or 8 bits
+The left most bit is a flag: 1 if the number is negative, 0 otherwise.
+When we deal with 8 bits, we have to write with 8 bits (8 0s and 1s)
+
+7 ---8 bits--> 0000 0111
+take the positive, flip it,
+step 1) -7 --8 bits--> 1000 0111 <- Is called sign-magnitude for -7
+step 2) Flip magnitude bits 1 111 1000
+step 3) Add 1            1
+                    =======
+                    1111 1001 <- 2's complement
+
+taking a negative and adding it the same positive to get 0
+
+    1111 111
+    0000 0111 < -7
+    1111 1001 < -7
+    ===========
+ (1) 0000 0000
+
+sign  magnitude
+The 1 falls off becasue there are only 8 bits in a byte, thus the answer is equal to zero.
+In this case we never have to literally subtract, we add to subtract.
+When we deal with 8 bits or 1 byte, any bit that gets 'pushed' pass the left of the 8 bits gets dropped.
+
+to rediderrate
+to get -7
+we get positive 7 in binary: 0000 0111
+we add a 1 at the start, that makes any number negative: 1 0000 0111 <- the 1 at the start is a sign, the rest of the number is the magnitude
+then we flip the bits aka magnitude: 1 111 0000
+then we add a 1 (2's complement): 1 111 0001
+and 1111 0001 is the answer or 2's compelment.
+2's complement removes the requirement to do subtraction, because a computer's circuitry can only add. this was to get by physical limitations.
