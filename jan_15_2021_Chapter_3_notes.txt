@@ -1,0 +1,126 @@
+
+            Chapter 3 notes
+
+Chapter learning outcome goals:
+- Distingusih between analog and digital data.
+- Explain data compression and calculate compression ratios.
+- Explain binary formats for negative and floating-point values.
+- Describe the characteristics of the ASCII and Unicode character sets.
+- Perform various types of text compression.
+- Explain the nature of sound and it's representation.
+- Explain how RGB values define color.
+- Distinguish between raster and vector graphics.
+- Explain temporal and spatial video compression.
+
+-
+
+3.1 Data & Computers
+
+- Without data, computers are useless.
+- The difference between Data and Information:
+    Data is basic values or facts
+    Information is data that has been organized or structured to solve a problem or fit a context
+    Information helps us answer questions or, "informs" us.
+
+- In the past computers only stored and supported textual data, that is no longer the case.
+    Today computers store several types of data:
+    -Numbers
+    -text
+    -Audio
+    -Images and graphics
+    -video
+    All of which is ultimately stored as binary digits.
+
+- Data Compression - reducing the amount of space needed to store a piece of data.
+    In the past this was needed because of data storage limitations, but now it is needed to easily share it with others.
+    Streaming video has driven the need for more efficient compression
+
+- The Compression Ratio - The compression ratio is the size of the Compressed Data divided by the size of the Original Data.
+    The values can be in bits or characters (etc) as long as both values measure the same.
+    The ratio should result in a number between 0 and 1
+    The closer the ratio is to zero, the tighter the compression.
+
+- Lossless - Data compression can be Lossless, meaning the data may be retrived without loosing the original information (analogy: Think of a zip folder)
+- Lossy - Information is lost in compression. But sometimes this is preferable. (analogy: Think of a .wav compressed to .mp3 - may sound worse, but easier to share.)
+
+-
+
+Analog and Digital Data
+ 
+The world is infinite, numbers are infinite and the same between digits is infinite. 
+Computers however are not, they have a finite amount of memory to perform tasks.
+The Idea is not to re-create the conditions of the real world but to create a representation that is close enough to get the task done - whatever that may be.
+
+Data can be represented two ways:
+    1. Analog Data - Continous representation, analogous to the actual information it represents.
+    2. Digital Data - Discreate representation, broken up into seperate elements.
+Example:
+A mercury thermometer is an analog device. The mercury rises in a tube to represent the correct air temperature.
+Analog Data is directly proportional to the continuous infinite world around us.
+This is why computers do not work well with this type of data.
+
+- Digitizing -To break up analog data into pieces and represent those pieces seperately. 
+- Pulse-code Modulation - The behaviour to digital data. By contrast analog data moves in waves and can be easily degraded or lost while travelling large distances (dependant on enviroment).
+    Digital data, moves in sharp on-or-off states directly reflection binary.
+    Digital Data can travel long distances and handle quite a bit of degradation before any information is lost.
+- Reclocking -Taking distorted digital data and 'reclocking' it back to it's original shape.
+    This will only work of course, if not too much degradation has occured. 
+
+Binary Representations
+
+- Binary bits 2^n of things, n being the base number.
+- Everytime you increase the base number by 1, you double the amount of things you can represent.
+
+- Sign Magnitude - Number representation in which the sign represents the ordering of the number (negative/positive) and the value represents the magnitude.
+    Think about a byte (8 bits), and think about the first bit. That bit will either be 0 (positive) or 1 (negative), much like a "-" we refer to these as signs.
+    The magnitude, is simply the number(the next 7 digits) that comes after.
+
+- Binary bytes(8 bits) have a maximum positive value of 01111111 (127) and a minimum negative value of 10000000 (-128)
+
+- Two's Complement - The process of getting a positive or negative counterpart of a binary value.
+    example. +2 = 00000010
+           invert 11111101
+          add "1" 00000001
+             -2 = 11111110
+- Overflow - Overflow occurs when the value exceeds 8 bits, the overflow on the left most side is then removed and ignored.
+    Somtimes overflow occurs due to adding or subtracting numbers in the hopes of achiving a number outside the scope of a byte(127 to -128).
+    This is a reflection of attempting to fit the outside, infinite world into the scope of a computer. How we handle memory limits changes depending on hardware and programming styles.
+
+- Radix Point - A term that can be used in any base, it is used to describe the decimal point, seperating integer numbers from fractions.
+    In Binary the values to the right of the Radix point are considered halves (2^-1), quarters (2^-2) and so forth.
+
+Floating Point
+
+-Floating Point values are use to represent real numbers, or values.
+    example: Values in decimal notation and floating-point notation (five digits).
+            Real value     Floating-point value
+            12001.00        12001 * 10^0
+            -120.01         -12001 * 10^-2
+            0.12000         12000 * 10^-5
+            -123.10         -12310 * 10^-2
+            155555000.00    15555 * 10^4
+    In the examples above the exponent value dicates the placement on the Radix Point and whether the number is negative or positive.
+    Notice in the last example information was lost, because we are only storing 5 bits of information, and the whole value is not accurately being represented.
+
+- Scientific Notation - Form of floating point notation where the decimal point is always to the right of the left-most number. Essentially always working with fractions.
+    Example. "12001.32708" in Scientific Notation would be written as "1.200132708E+4" (where "E" is the expontent value)
+
+- ASCII character set
+    American Standard Code for information exchange.
+    Originally contained 128, but has since been extended with an eigth bit to allow 256 characters
+
+- Unicode character set
+    256 characters is not enough for many languages, which made a need for the development of the Unicode character set.
+    Uses 16 bits per character (hex) 
+    Is a 'superset' of ASCII. Meaning the first 256 characters are identical, so that it may be compatable with ASCII systems.
+
+Text Compression
+    - The three types of text compression include:
+        1. Keyword Encoding - frequently used words are condensed into a single character. (the, and, if, a etc)
+        2. Run-Length Encoding - Replaces a long series of the same character into a single character. Not super useful in English but in DNA encoding for example, it is.
+            For example, this string of "AAAAAAAA" could be encoded as "*A8".
+        3. Huffman Encoding - Encodes characters based on their using, meaning a frequently used vowel will use a smaller binary value than a less used letter like "q". 
+            Thus, ultimately making the document smaller (in memory) without changing any values (when compressing).
+            This method is preferable because there is no ambiguity, the binary value itself represents the text.
+            
+
