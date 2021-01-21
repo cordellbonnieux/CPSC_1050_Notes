@@ -1,0 +1,43 @@
+Jan 18 2021 CPSC 1050 W01
+
+- Quiz Wednesday: The details will be posted on D2L
+- There will be a total of 24 questions, 7 true/false the rest multiple choice.
+- 35mins to complete the Quiz
+- it will start at 13:30 
+- it will be open book
+
+
+0000 1101 ign magnitude of a positive integer
+in decimal it is +13
+
+-13 or -7 to 2's complement
+These steps will give you 2's complement
+step 1) write the sign magnitude 
+step 2) flip the non-sign bits
+step 3) add 1
+
+We are given an 8 bit quantity and we are told that it is in 2's complement
+How do we arrive at the decimal value?
+We do the above three steps and it will take us to the sign magnitude:
+Example. 1111 1011 is 2's complement. What decimal value does it represent.
+step 1) flip the non sign bits 1 000 0100
+step 2) add 1                  1000 0101
+
+Decimal place algorithm
+
+23.50^10 in binary in up to 4 decimal places
+23 -> 10111
+.58x2 = 1.16
+.16x2 = 0.32
+.32x2 = 0.64
+.64x2 = 1.28
+= 10111.1001
+
+Huffman Encoding
+
+compression ratio = new size / old size (new size over old size)
+- There is only one way to read a huffman encoding
+- More used characters use less bits
+- ASCII characters always use 8bits (a byte), but a Huffman encoded representation will use less than 'letter^8'.
+
+Finish reading Chapter 3, and watch all the associate videos provided by the professor.
