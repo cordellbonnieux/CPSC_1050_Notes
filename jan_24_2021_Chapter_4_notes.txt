@@ -1,0 +1,75 @@
+
+Chapter 4 Notes
+
+- Gate
+    - A device that performs a basic operation on electrical signals
+    - Accepts one or more input signals and produces a single output signal.
+    - Six types of gates each perform a particular logical function
+- Circuit
+    A collection of gates combined to perform more complex tasks
+- Combinational Circuit
+    The input values explicity determine the output
+- Sequential Circuit
+    The output is a function of the input values and the existing state of the circuit.
+
+- How do we represent the behaviour of gates and circuits?
+    1. Boolean Expressions
+        Using Boolean Algebra, a mathematical notation for expressing two-valued logic (True/False)
+    2. Logic Diagrams
+        A graphical representation of a circuit; each gate has it's own symbol.
+    3. Truth Tables
+        A table showing all possible input values and the associated output values.
+
+Logic Gates
+    1. NOT gate - Inverts a single value.
+    2. AND gate - Produces a 1 if both input values are 1.
+    3. OR gate - Produces 1 if one or the other, or both input values are 1.
+    4. XOR gate - Produces a 1 if one or the other (but not both) input values are 1.
+    5. NAND gate - Produces the opposite results of an AND gate (or could be thought of as NOT + AND).
+    6. NOR gate - Produces the opposite results of an OR gate (NOT + OR).
+
+Boolean Algebra
+    1. NOT -    X = A'
+    2. AND -    X = AB
+    3. OR -     X = A + B
+    4. XOR -    X = A (+) B
+    5. NAND -   X = (AB)'
+    6. NOR -    X = (A + B)'
+    
+Properties of Boolean Algebra
+
+Property        |   AND                |   OR      
+                |                      |           
+Commutative     | AB = BA              | A + B = B + A
+Associative     | (AB)C = A(BC)        | (A + B) + C = A + (B + C)
+Distributive    | A(B + C) = (AB + (AC)| A + (BC) = (A + B)(A + C)
+De Morgan's Law | (AB)' = A' + B'      | (A + B)' = A'B'
+Complement      | A(A') = 0            | A + (A') = 1
+Idempotent      | AA = A               | A + A = A
+Identity        | A1 = A               | A + 0 = A
+Boundeness      | A0 = 0               | A + 1 = 1 
+Involution      | (A')' = A            |
+
+Adders
+
+- Half-Adder
+    A circuit that computes the sum of two bits and produces the correct carry bit.
+    Made up of 2 gates (XOR and AND)
+    Sum = A (+) B (XOR - A or B but not both)
+    Carry = AB (A AND gate B)
+- Full Adder
+    A circuit that takes the carry in value into account.
+    Two bits and carry-in as three inputs.
+    Two Half Adder circuits combined with an additional OR gate
+    Sum = A'B'C + A'BC' + AB'C' + ABC =  (A'B' + AB)C + (A'B + AB')C'
+    Carry-out = A'BC + AB'C + ABC' + ABC = (A'B + AB')C + AB = (A(+)B)C + AB
+- 4 Bit Full Adder
+    How to add 4-bit numbers
+    Duplicate a Full Adder 4 times
+    Carry out from one is used as the carry-in to the next
+
+Integrated Circuits
+    Also known as "Chips"
+    A piece of silicon on which multiple gates have been embedded
+    The most important IC in any computer is the Central Processing Unit (CPU)
+    

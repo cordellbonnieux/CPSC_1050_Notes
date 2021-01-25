@@ -44,9 +44,6 @@ Boolean Expression <=> Truth Table <=> Circuit
     - two inputs
     - X = A (+) B 
 
-The difference between XOR and the OR gate is only one input situation
-XOR excludes the two signals to both????
-
 Gates with more inputs
 - some gates can be generalized to accept three or more input values
 - A three-input AND gate for example produces an output of 1 only if all input values are 1

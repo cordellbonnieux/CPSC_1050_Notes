@@ -21,11 +21,11 @@ How do we arrive at the decimal value?
 We do the above three steps and it will take us to the sign magnitude:
 Example. 1111 1011 is 2's complement. What decimal value does it represent.
 step 1) flip the non sign bits 1 000 0100
-step 2) add 1                  1000 0101
+step 2) add 1                  1 000 0101
 
 Decimal place algorithm
 
-23.50^10 in binary in up to 4 decimal places
+23.58^10 in binary in up to 4 decimal places
 23 -> 10111
 .58x2 = 1.16
 .16x2 = 0.32
