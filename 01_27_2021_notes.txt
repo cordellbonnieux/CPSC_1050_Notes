@@ -1,0 +1,24 @@
+Class Notes Jan 27 2021
+
+von neuman architecture
+-instructions and data both stored on memory Unit
+-the processor units are sepearate from storage device
+
+fetch execute cycle
+- the way any program runs on any computer
+- instructions and data are in memory
+    a. fetches the instructions
+    b. decodes it
+    c. get the data needed
+    d. execute the instructions
+
+computer language
+    -op code and opperand
+    -opcode is the first 4 bits
+    - the opperand is the remaining 12
+    -op code has an assembly language associated to read the binary(sequence)
+-sequence = 1 and 0s which is the lowest level language (binary / computer language)
+- assembly = the next lowest level lanuage, used to perform very simple tasks with binary data
+
+
+
