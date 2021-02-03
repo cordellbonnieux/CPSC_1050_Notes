@@ -1,0 +1,86 @@
+CPSC 1050 Class Notes 
+Feb 1 2021
+
+Pusedo Code and C++ intro
+
+- Psuedo Code Terms used in 1050
+    Get / Read / Input //prompt the user to enter a value or string
+    Display/ Write/ Print/ Output // echo something to the screen
+    Set // declare a variable or alter a variable
+    - Psuedo Code Statements
+        if(condition)
+        else(condition)
+        use indent/TAB in place of {}
+        while (condition)
+
+- C++ example function:
+
+    Pusedo Code:
+    Display "Enter two numbers"
+    Input num1
+    Input num2
+    Set average to (num1 + num2) /2
+    Display "Average of numbers= " + average
+
+    C++ Code:
+    in main() {
+        cout << "Enter two numbers: " << end1;
+        double num1, num2, average;
+        cin >> num1 >> num2; // gets the numbers
+        average = (num1 + num2) / 2.0;
+        cout << "The average of the numbers is: " << average;
+        return 0;
+    }
+
+Lab 4 Class Notes
+
+1) Machine language (binary) - super simple cpu
+2) Assembler language - super simple cpu
+3) Psuedo code - notepad
+
+- Fetch Execute Cycle
+    Fetch
+    Decode
+    Get
+    Execute
+
+- Super Simple CPU
+    (don't use TAB in Assembly language - it is very fickle.)
+    Each location of memory in the SSCPU has 2 bytes (16 bits).
+    First 4 bits are the opcodes
+    Following 12 bits are either data, LDI, address of data for ADD, STO etc
+    PC: contains the address of next to be executed
+    ACC: 
+    first four bits are opcode rest is operand (for assembler language).
+
+    Assembly Language example:
+    LDI 5  ;address 0 --put 5 into ACC
+    ADD 4  ;address 1 -- add the value which is at address 4 to ACC
+    STO 5  ;address 2 -- store ACC to address 5
+    STP    ;address 3
+    DAT 40 ;address 4
+    DAT    ;address 5
+    DAT    ;address 6
+
+    Example:
+    LOD 5  ; 0 --put the value at location 5 into ACC
+    ADD 4  ; 1 --add what is at address 4 to ACC
+    STO 6  ; 2 --store what is in ACC at location 6
+    STP    ; 3 -- stop the program
+    DAT 10 ; 4
+    DAT 3  ; 5
+    DAT    ; 6
+
+    A better way of doing the above:
+        LOD XX
+        ADD YY
+        STO ZZ
+        STP 
+    XX  DAT 10
+    YY  DAT 3 
+    ZZ  DAT
+
+Chapter 6.
+
+
+    

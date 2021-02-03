@@ -2,5 +2,26 @@
 January 25, 2021
 CPSC 1050 Class Notes
 
+- Quiz Wednesday on lab2, chapter 3 - check d2l
+- study boolean identity simplification, boolean algebra in general
 
+This week: Continuing with Gates, circuits, truth tables and boolean expressions.
+(Chapter 4)
+
+Circuits <=> Boolean Expression <=> Truth Table 
+
+Circuits to Truth Table
+
+1. identify each row where the output is 1
+2. for each row construct an AND that produces a 1 for the exact combination of input values for that row and a 0 for all others.
+3. take all the OR of all expressions from the previous step. this would be a boolean expression with the given truth tabale
+4. construct the circuit that corresponds to the boolean expression
+
+ 11
+  11
+  11
++====
+ 110 <- sum
+
+ simplify A'(A + B) +
 

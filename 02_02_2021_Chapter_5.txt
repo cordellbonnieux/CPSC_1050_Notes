@@ -1,0 +1,143 @@
+Chapter 5 notes.
+
+5.1
+    CPU - Central Processing Unit.
+    GHz - The measurement of the speed of the CPU.
+        G = Giga (meaning one billion).
+        Hz = hertz (Measures cycles per second, named after Heinrich R. Hertz).
+        MHz = millions of hertz
+    Clock - Centerally generated series of electical pulses. Used to ensure all actions of the computer are coordinated.
+    Bus - ports that connect to external devices, like a USB port.
+        FSB - front side bus, the main controller of all buses in the computer.
+            Speed of FSB is also measured in MHz (GHz)
+            Generally only accessed when the proccessors cannnot find what they need in the Cache (though they more than often do)
+            The reason this is, is beacause the FSB is generally much slower than the processors.
+    MB - Megabyte, 2^20 bytes. A single megabyte is a little more than one million bytes.
+    Cache - Small amount of quick load memory. 
+        Like when you load a webpage, your browser may cache the images and files for a later visit to load faster.
+        The Chache in this case, is generally built into the processor chip.
+        Allows the processors to have direct access to memory.
+
+    Powers of 10 are used to express time (multiples of seconds).
+    Powers of 2 are used to express storage (bits)
+
+    Faster clock, FSB and more chache make a faster computer. Though a faster processor requires more power, and is prone to overheat.
+    A faster FSB would only be of use if external devices ran as fast. 
+    An as a Cache gets bigger, it's data becomes more cumbersome to access thus slowing down the processor(s).
+
+    Display Area 
+    HD - High Definition
+    LED - Light emitting diode
+        Last longer without going dim, and do not contain toxic metals.
+    Screen Resolution - Measured in pixels (eg. Zpx x Ypx)
+
+
+    GPU - Seperate chip, generally more powerful than the main processors.
+        Games and other applications send information to the GPU, so it may quickly render images to the screen.
+        Relieving the main processors of this task. Keeps the screen image data in it's own seperate memory.
+        The more memory the GPU has the more complex images can be displayed and the more external screens can be used.
+    RAM - Random Access Memory (Main Memory)
+        Random Access means that each byte of memory can be accessed directly.
+        1gb = 2^30, eg. 8gb = 8 x 2^30 
+    DDR3 - An acronym which describes a type of memory created through clever circuitry which increased the rate that memory could operate at.
+    HDD - Hard Drive Disk 
+        Computer's secondary storage device, generally the largest.
+    RPM - Revolutions Per Minute (like record speeds)
+        Used to describe how fast the hard drive disk spins. 
+        The faster the spin the higher the data transfer rate.
+    SSD - Solid State Disk
+        Used to replace the HDD.
+        Rather than a disk, information is stored entirely electronically.
+        The technology behind SSD is similar to Ram, though data is not lost when the power is off (because it has no moving parts).
+    
+    External Connections
+    
+    Disks (Bluray, DVD, CD etc)
+    R - Writeable 
+    RW - Re-writeable
+
+    3D Camera - Means in addition to a standard 2D camera, it can calculate the distance between objects it's looking at.
+    USB - Universal Serial Port 
+    HDMI - High defenition Multimedia Interface 
+
+
+5.2
+    Von Neumann Architecture - The basis of all modern computers
+        The principal idea that memory and instructions could be stored in the same location (eg. programs).
+        The idea should probably be credited to J. Presper Eckert and John Mauchly.
+
+        Dr. Atanasoff and Clifford Berry created the ABC (Atanasoff-Berry Computer) in 1941, which was the first working digital computer.
+            The first working computer was often acreditted to Eckert and Mauchly's ENIAC computer which was completed in 1945.
+
+        Von Neumann Architecture Diagram
+                             -----------------------
+                            | --------------------- |
+                            | |        CPU        | |
+                            | |  ---------------- | |
+            Input Device => | | |  Control Unit | | | => Output Device
+                            | | ----------------- | |
+                            | | ----------------  | |
+                            | | |  Logic unit  |  | |
+                            | |  ---------------  | |
+                            | --------------------- |           The ALU(Logic Unit) and Control Unit together make up the CPU.
+                            |       /\      ||      |                               
+                            |       ||      ||      |
+                            |       ||      \/      |
+                            | --------------------- |
+                            | |    Memory Unit    | |
+                            |  -------------------  |
+                            -------------------------
+        - The memory unit holds both data and instructions
+        - The logic unit performs arithmetic and logic operations on data
+        - Input moves data from the outside world into the computer
+        - The Output unit moves results from the computer to the outside world 
+        - The control unit makes sure all units behave correctly
+
+        ALU - Arithmetic logic unit 
+            Capable of performing basic arithmetic operations. 
+        Register - A small storage area in the CPU used to store intermediate values or special data.
+      
+        Control Unit - The organizing force, in charge of the fetch execute cycle.
+            The Control Unit has two special registers; The instruction register (IR) and the program counter (PC)
+            - Instruction Register - contains the instructions that are being executed.
+            - Program Counter - contains the address of the next instruction to be executed.
+            
+        Input - the way we enter programs from the outside world into a computer.
+            i.e. a keyboard and mouse or a scanner. The first Inputs were punchcards.
+        Output - The way a computer's results are shown to the outside world.
+            i.e. a monitor or printer
+
+        Motherboard - where all components reside.
+
+        The Fetch Execute Cycle
+
+        Fetch - The PC (program counter) contains the address of the next instruction to be executed.
+            The Control unit then goes to the address in the specified memory in the PC and copies it s contents.
+            Then places the copy in the IR (instruction register). The IR now contains instructions to be executed.
+            The PC now must be updated the get the next address of instructions to be executed.
+            The Control unit increments the PC, and since the instructionss are stored contiguously the next adress of instructions will be put into the PC.
+            It is possible that the PC may later be changed by he instruction being executed.
+        Decode - Execute the instruction in the instruction register. The control unit will determine what that instruction is.
+        Get - The instruction may require additional memory, this steps GETS that memory location.
+        Execute - once the instruction is decoded and the data has been fetched the control unit is ready to execute the instruction.
+            When this step is complete, the cycle repeats.
+
+
+        ROM - ROM memory is built in memory that cannot be changed (the oposite of RAM).
+            "burning" is adding the bit patterns to the ROM, which is done at the time of assembly or manufacture.
+            ROM is used to store the instructions the computer itself needs to run.
+
+        Secondary Storage Device - A storage device seperate from the main storage device, that can be written to.
+            Saves the data when the power is off. Data can be added or removed from it.
+            Also and input and output device. 
+            Also known as "Mass Storage Devices"
+        
+        Seek Time - the time it takes for the read/write head on a hard disk to get positioned over the specified track.
+        Latency - The time it takes for the specified sector to spin to the read/write head.
+        Access Time - The time it takes for a block to start being read. The sum of seek time and latency.
+        Transfer Rate - The rate at which the data moves from the disk to memory.
+        Cylinder - The set of concentric tracks on all surfaces
+
+        
+        
+        
