@@ -1,0 +1,58 @@
+Chapter 6 Notes
+
+
+Bit - I/O 
+Byte - 8 bits 
+Word Length - Number of bytes(bits) used in each word in a CPU.
+    -In this case, our Word Length is 2 bytes.
+Accumulator === ACC === A register
+
+OpCode Instructions
+
+OpCode      Meaning of Instructions
+0000        Stop execution                              // Stops the program
+1100        Load word into the A register               // loads one word (two bytes) into A register
+1101        Load byte into the A register               // Like above but only loads a single bye into A register
+1110        Store word from the A register              //A Stores the entire contents of the A register in to the memory location specified in the operand. 
+1111        Store byte from the A register
+0111        Subtract the operand from the A register 
+
+
+Program Example:
+This example program will print "Hi" to the screen using assembly language.
+Requires 5 instructions to achive:
+    Load "H" into ACC
+    Store byte in ACC into Output
+    Load "i" into ACC
+    Store byte in ACC into Output
+    Stop program
+
+Once again remember each of these steps uses the Fetch-Execute Cyle, which looks like this:
+1.Fetch the instruction from the memory location specified by the Program Counter.
+2. Decode the instruction and update the Program Counter.
+3. Get the operand (if needed).
+4. Execute the instruction.
+
+6.4 Assembly Languages
+
+Assembly Language - The lowest level of human friendly programming languages. 
+    Where latin character words are used to describe each of a computers functions (or instructions).
+    There are as many variations of Assembly Languages as there are CPUs.
+Assembler - A program that translates Assembly Language to Binary for the computer to digest.
+Assembler Directives - Instructions to the translating program.
+Branch - An instruction that indicates which instruction to process next (like a jump).
+Label - A name given to a memory location, which can be used as an opperand. Like a variable in high level languages.
+
+6.5 Expressing Algorithms
+
+Algorithm - A logical sequence of tasks used to solve a problem.
+Pseudocode - A combination of statements, english and math used to describe an outline for a function or algorithm later to be used in code.
+
+6.6 Testing
+
+Test pla - A doc that specifies how a program is tested.
+Code coverage (clear-box) testing - Testing a program or part of one based on covering all the statements in the code.
+Data coverage (black-box) testing - Testing a program or subprogram based on the possible input values, treating the code as a black box.
+Test Plan Implementation - Using the test cases specified in a test plan to verify that a program outputs the predicted results.
+
+

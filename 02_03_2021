@@ -1,0 +1,24 @@
+
+Class Feb 3rd 2021
+#include <iosteam> // allows you to print to screen
+C++ decrementing while loop:
+
+using namespace std;
+
+int main(){
+    int xx = 10;
+    int Dec = 2;
+    while (xx > 0){
+        cout << xx << " , ";
+        xx = xx - Dec;
+    }
+    return 0;
+}
+
+Decrement by 2:
+
+int main(){
+    for (int count = 1; count <= 10; count++){
+        
+    }
+}
