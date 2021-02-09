@@ -1,0 +1,120 @@
+Chapter 5 Review
+
+Von Neuman Architecture
+Components:
+1. Input Device
+2.CPU
+    a. Control unit
+    b. Arithmetic/Logic unit
+3. Memory Unit 
+4. Output Device 
+- Instructions and data are both stored in the memory unit.
+-The Processor units are seperate from storage units
+
+Flow of Information
+- Bus:
+    - A communication system that transfers information (address,data and control) 
+    between components inside a Von Neuman Machine (computer).
+        component examples:
+        a. Input Devices 
+        b. CPU 
+        c. Main memory (memory unit) 
+        d. Output Devices
+    - Bus width is the number of bits that it can transfer simultaneously. 
+
+Input / Output Units
+- Input Unit - A device through which data and programs from the 
+    outside world enter the computer system. (eg. keyboard)
+- Output Unit - A device through which results stored in the computer 
+    memory are made available outside the computer system. (eg. screen)
+
+Memory 
+- A collection of cells, each with a unique physical address 
+    Each cell will have a binary value with varrying number of bits
+    for the address and for the contents. 
+    The number of bits in each location (contents) is called
+    the Memory's Addressability.
+    The value of the address and contents are NOT related.
+    The contents themselves could be used to represent anything,
+    eg. an instruction, a signed-magnitude number, an ASCII character, part of an image or video etc..
+
+RAM - Random Acess Memory
+    - Memory in which each location can be accessed and changed.
+ROM - Read Only Memory
+    - Memory in which each location can be accssed but not changed.
+
+RAM is volatile so data will be lost when the power is off.
+ROM is not, so data is saved even when there is no power.
+
+Cache Memory - Small amount of fast-access memory into which 
+    copies of frequently used data is stored.
+    Before a main memory access is made, the CPU checks whether the data 
+    is stored in the cache memory.
+
+Memory Hierarchy.    
+ /\                 
+ ||               <----------> 
+ ||               CPU Registers            <--o
+ ||           <------------------>            |
+ ||               Cache Memory                |--- Internal Memory
+ ||       <-------------------------->        |
+ ||           Primary / Main Memory        <--o
+ ||    <------------------------------->
+ ||         Secondary Memory / Disks           <-- External Memory
+ || <-------------------------------------->
+ || <===============Capacity================>
+speed
+ and
+cost 
+ per 
+ bit
+
+CPU - Central Processing Unit (CPU)
+    - Responsible for processing in a computer.
+    - The CPU is made up of two parts:
+        1. ALU ( Arithmetic / Logic Unit)
+        2. Control Unit
+
+ALU - Arithmetic / Logic Unit 
+    - Performs basic arithmetic ooerations such as adding, subtracting,
+        multiplying and dividing two numbers.
+    - Performs logical operations such as AND, OR and NOT.
+ "Most modern ALUs have a small amount of special storage units called Registers."
+    -Registers 
+        Can be accessed faster than main memory
+        Hold special data and intermediate values 
+
+Control Unit 
+    - Ensures all other components are working
+    - Has 3 special Registers:
+        1. IR - Instruction Register
+            Contains the instruction that is being executed.
+        2. PC - Program Counter
+            Contains the address of the next instruction to be executed.
+        3. ACC - Accumulator 
+            Stores the intermediate arithmetic and logic results.
+
+The Fetch Execute Cycle
+    - All the computer instructions relate to storing, retrieving and processing data.
+    - The Proccessing Cycle Steps:
+        1. Fetch - the next instruction.
+        2. Decode - the instruction. 
+        3. Get - data if needed or required by instruction. 
+        4. Execute - the instruction.
+    - To start the fetch-execute cycle the address of the first instruction 
+        is loaded into the program counter (PC).
+    
+A closer look at the Fetch Execute Cycle
+    1. Fetch the next instruction.
+        a. The address of the instruction is in the PC. 
+        b. Control unit goes to the above address in memory.
+        c. Copies the instruction from that address to IR.
+        d. PC stores the address of the NEXT instruction. 
+        e. Control unit increments the PC. 
+    2. Decode the instruction. 
+        a. Control unit determines the instruction. 
+        (The Instructions are built into the circuits of each machine) 
+    3. Get data if needed. 
+        a. Access data from the memory if needed. 
+    4. Execute the instruction. 
+        a. Control unit sends signals to the ALU to carry out the processing. 

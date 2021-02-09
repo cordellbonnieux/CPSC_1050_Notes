@@ -1,0 +1,34 @@
+Quiz Wed Feb 10 base on Lab 4.
+Acedemic week 8 is midterm week. (2nd week back after spring break.)
+
+
+Chapter 7 - Problem Solving and Algorithms.
+
+    Data types
+-A data type is classification of the type of data that a varibale can hold.
+        i.e. integers, booleans, strings etc 
+    Arrays
+-A named homogeneous collection of items in which individual items are accessed by its index position within the collection.
+    i.e. integer arrayName[SIZE] //size could be any Number.
+-A Sorted Array makes the Array easier to Search!
+   
+   Binary Search
+-In general if you have 'n' sorted items, it takes at most log_2(n) comparrisions to determine if an item is in the list or not.
+-Binary search of n sorted items has log_2(n) complexity in the worst case (if item does not exist).
+
+    Sequential Search
+-In n items, even if they are sorted has complexity n in the worst case. (not as good)
+
+
+    Bubble Sort 
+-Add the first index pos to the last index pos, then divide that number by 2. 
+    Repeat until the result is found.
+    http://cs.armstrong.edu/liang/animation/web/BubbleSort.html
+
+    Quick Sort
+-Use a pivot to partition the list into two parts.
+-Click the step button to move low, high, or swap a small element at low with a large element at high.
+http://cs.armstrong.edu/liang/animation/web/QuickSortPartition.html
+
+-Quick sort on n random values, works in nlog(n) comparrisons.
+-Select sort or Bubble sort, need n^2 comparrisons.
