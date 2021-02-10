@@ -1,0 +1,113 @@
+Chapter 7   Problem Solving And Algorithms  Notes
+
+7.1 How to Solve Problems
+
+    Look For Familiar Thing.
+When analyzing a problem in programming, think of similar situations,
+or solutions that may be able to be slightly altered to provide a solution for the current problem.
+
+    Divide And Conquer
+When faced with a task or problem, try to break up the problem into several smaller, easier to solve subproblems.
+
+    Algorithm
+Unambiguous instructions for solving a problem or subproblem in a finite amount of time using a finite amount of data.
+
+-
+
+    The Computer Problem-Solving Process.
+
+Analysis and specification phase:
+    Analyze             Understand (define) the problem.
+    Specification       Specify the problem that the program is to solve.
+Algorithm development phase:
+    Develop Algorithm   Develop a logical sequence of steps to be used to solve the problem.
+    Test Algorithm      Follow the steps as outlined to see if the solution truly solves the problem.
+Implementation Phase:
+    Code                Translate the algorithm into a programming language.
+    Test                Have the computer follow the instructions. Check the results and make corrections until the answers are correct.
+Maintenance Phase:
+    Use                 Use the program.
+    Maintain            Modify the program to meet changing requirements or to correct any errors.
+
+-
+
+Methodology to Designing Algorithms:
+1. Analyze the problem.
+2. List the main tasks.
+3. Write the remaining modules.
+4. Re-sequence and revise as necessary.
+
+
+7.2 Algorithms with Simple Variables.
+
+-There are two basic types of loops: count controlled and event controlled.
+    1. A count controlled loop repeats a process a specified number of times.
+    2. A loop that's count is controlled by input or by an event.
+
+    Abstract Step
+An algorithmic step for which some details remain unspecified.
+
+    Concrete Step
+A step for which the details are fully specified.
+
+7.3 Composite Variables
+
+    Atomic data
+Data that can be represented in a single or small binary value.
+i.e. int, bool, etc 
+For the sake of grouping variable types together in high level languages,
+strings are also thought of as being atomic. Despite the fact that depending on the 
+length a string can contain a lot of binary values.
+
+    Composite Variables:
+    
+    Arrays
+A named collection of homogenous items that are indexed.
+- Processing an array: A general purpose term used when working with the contents of an array (i.e sorting).
+
+    Records
+Heterogenous list of items. Like an array but can store multiple types of variables. (Like an Object in JavaScript).
+
+7.4 Searching Algorithms
+
+    Sequential Search
+The most basic type of search. Checks one item and compares it to the search.
+If it does not match, the loop tries the next one etc.
+
+    Binary Search
+Looking for an item in an already sorted list by eliminating large portions of the data on each comparison. 
+Starts ion the middle indexed number to see if it is greater or smaller (or the value itself). If it determines it too small for exmaple,
+the it will then search the item in between the next and the last indexed items.
+Much more efficient than the Sequential Search, especially at larger numbers, but the array must already be sorted.
+
+7.5 Sorting 
+
+    Selection Sort
+Find the smallest in the list and copy it over into the new list, repeat until done.
+
+    Bubble Sort
+A slow/inefficient sorting method that starts at the last item and compares it with the previous one, if the last one is smaller their positions are swaped.
+This process then repeats until it reaches the first index item (0).
+
+    Insertion Sort
+Start with the first two items, compare them then put them in place. Then compare them with the next number, then the next and so on.
+
+7.6 Recursive Algorithms
+
+Recursive Algorithm: An algorithm that calls itself.
+
+7.7 Important Threads
+
+    Data Abstraction
+The seperation of the logical view of data fromi ts implementation.
+
+    Procedural Abstraction
+The separation of the logical view of an action from its implementation.
+
+    Control Abstraction 
+The seperation of the logical view of a control structure from its implementation.
+
+    Control structure
+A statement used to alter the normally sequential flow of control. 
+
+
