@@ -1,0 +1,500 @@
+Chapter 2 Practice Test 
+For Review - Feb 17 2021
+
+1. A
+2. C 
+3. B 
+4. E
+5. D
+
+6. A
+    11  11
+    1110011
+    0011001
+   +++++++++
+   10001100
+
+7. C
+     1 1 1
+    1010101
+      10101
+    +++++++
+    1101010
+
+8. B
+    111111
+    1111111
+      11111
+    +++++++
+   10011110
+
+9. F
+    1111111
+        111
+    -------
+    1111000
+
+10. D
+    1100111
+        111
+    -------
+    1100000
+
+11. E
+         02
+    1010110
+        101
+    -------
+    1010001
+
+12. A       X(B) ??
+13. B 
+14. A       X(B) r to l (not l to r)
+15. B 
+16. B       X(A) two hex can be stored into one byte! duh!
+17. B       X(A) always r to l 
+
+18. A natural number is 0 and any number you can get by repeatedly adding 1.
+    A negative number is any number below 0.
+
+19. A natural number is 0 and any number you can get by repeatedly adding 1.
+    A rational number could be a natural number, a negative number or a fraction.
+
+20. 
+    a. rational 
+    b. rational 
+    c. natural 
+    d. rational     
+    e. rational 
+    f. rational     Pi is not rational
+
+21. 891
+
+    a. Base 10 = 891
+
+    b. Base 8 = 1573  <----- 891 cannot be a number in base 8 dummy!
+          111 r 3       13 r 7      1 r 5     0  r 1
+         ------      ------       ----       ----
+        8|891        8|111       8|13       8|1
+           8            8           8
+        -----          ---         ---
+           11           31          5
+            8           24
+          ----         ----
+            3            7
+    
+    c. Base 12 = 623 
+            74 r 3        6 r 2     0 r 6 
+          -----         ----       ----
+        12|891        12|74      12|6
+           84            72
+          ----
+            51
+            48
+            --
+             3
+    
+    d. Base 13 = 537        
+           68 r 7     5 r 3     0 r 5
+          ----      ----       ---
+       13|891     13|68      13|5
+          78         65
+          --         --
+          111         3
+          104
+          ---
+            7
+
+    e. Base 16 = 37B
+            55 r 11     3 r 7    r 3
+          -----       ----
+        16|891      16|55
+           80          48
+           --          --
+            91          7
+            80
+            --
+            11
+
+22.
+    Base 10 = 8x10^2 + 9x10^1 + 1x10^0
+    Base 8 = 1x8^2 + 5x8^2 + 7x8^1 + 3x8^0 <--- cant be base 8
+    Base 12 = 6x12^2 + 2x12^1 + 3x1^0
+    Base 13 = 5x13^2 + 3x13^1 + 7x13^0
+    Base 16 = 3x16^2 + 7x16^1 + 11x16^0
+
+23. 
+    a. 111_2 = 7
+        1x2^0 = 1
+        1x2^1 = 2
+        1x2^2 = 4
+
+    b. 777_8 = 511
+        7x8^0 = 7
+        7x8^1 = 56
+        7x8^2 = 448
+
+    c. FEC_16 = 4076
+        12x16^0 = 12
+        14x16^1 = 224
+        15x16^2 = 3840
+    
+    d. 777_16 = 1911
+        7x16^0 = 7
+        7x16^1 = 112
+        7x16^2 = 1792
+    
+    e. 111_8 = 73
+        1x8^0 = 1
+        1x8^1 = 8
+        1x8^2 = 64
+
+24. Base 2 (binary) can be broken up into protions of 3 digits, each three digit portion represents multiples of 2, in this case "4" "2" "1" from Left to Right. 
+    If the binary number associated with any of these positions is 1, then it's related octal value is added to the total of each group of 3.
+    for example 101 111
+                421 421
+                =======
+                 5  7 == 57 in octal
+
+25. both powers of 2.
+
+29. binary to hex
+
+    a. 1010 1001
+       8421 8421
+         A   9
+
+    b. 1110 0111
+       8421 8421
+        E    7
+
+    c. 0110 1110
+       8421 8421
+        6    E 
+
+    d. 0111 1111
+       8421 8421
+        7    F
+
+30. hex to octal 
+    a. A    9
+       8421 8421
+       1010 1001
+       010 101 001
+       421 421 421
+       2   5   1
+    
+    b. E    7
+       8421 8421
+       1110 0111
+       011 100 111      
+       421 421 421
+       3   4   7
+
+    c. 6    E
+       8421 8421
+       0110 1110
+       001 101 110
+       421 421 421
+       1   5   6
+
+31. octal to hex
+
+    a. 7   7   7
+       421 421 421
+       111 111 111
+       0001 1111 1111
+       8421 8421 8421
+       1    F    F 
+
+    b. 6   0   5
+       421 421 421 
+       110 000 101
+       0001 1000 0101
+       8421 8421 8421
+       1    8    5
+
+    c. 4   4   3
+       421 421 421
+       100 100 011
+       0001 0010 0011
+       8421 8421 8421
+       1    2    3
+
+    d. 5   2   1
+       421 421 421
+       101 010 001
+       0001 0101 0001
+       8421 8421 8421
+       1    5    1
+
+    e. 1
+       421
+       001
+       0001
+       1
+
+32. decimal to octal
+
+    a. 901 = 1605
+          112 r5      14 r 0       1  r 6     0  r 1
+         ----        ----        ----        ----
+        8|901       8|112       8|14        8|1
+          8            8
+          -           --
+          10           32
+           8
+          --
+           21
+           16
+           --
+            5
+
+    b. 321 =  501
+           40 r 1      5 r 0      0 r 5
+         ----        ----        ----
+        8|321       8|40        8|5
+
+    c. 1492 = 2724
+           186 r 4     23 r 2      2 r 7    0 r 2
+         -----       ----        ---
+        8|1492      8|186       8|23
+           8          16          16
+          --          --          --
+           69          26          7
+           64          24
+           --          --
+            52          2
+            48
+            --
+             4
+
+    d. 1066 = 3512                                                  X(2052) math error
+           233 r 2     29 r 1      3 r 5    0 r 3
+         -----       ----        ----
+        8|1066      8|233       8|29        
+           8          16          24
+          --          --          --
+           26          73          5
+           24          72
+           --
+            26
+            24
+
+    e. 2001 = 3721
+           250 r 1     31 r 2     3 r 7    0 r 3
+         -----       ----        ---
+        8|2001      8|250       8|31
+          16          24          24
+          --          --          --
+           40          10          7
+
+33. decimal to binary
+
+    a. 45 = 101101
+          22 r 1      11 r 0       5 r 1      2 r 1       1 r 0     0 r 1
+         ----        ----        ---         ----        ---
+        2|45        2|22        2|11        2|5         2|2     
+
+    b. 69 = 1000101
+          34 r 1      17 r 0       8 r 1      4 r 0       2 r 0      1 r 0      0 r 1
+         ----        ----        ----        ---         ---        ---
+        2|69        2|34        2|17        2|8         2|4        2|2
+                      2
+                      -
+                      14
+
+    c. 1066 = 10000101010
+           533 r 0    266 r 1     133 r 0      66 r 1     33 r 0      16 r 1       8 r 0      4 r 0      2 r 0      1 r 0       0 r 1
+         ------      -----       ----        ----        ---         ---         ---         ---        ---           
+        2|1066      2|533       2|266       2|133       2|66        2|33        2|16        2|8        2|4         
+                      4                       12                      2
+                      -                       --                      -
+                      13                       13                     13
+                      12
+                      --
+                      013
+                       12
+                       --
+                        1
+    d. 99 = 1100011
+          49 r 1      24 r 1      12 r 0       6 r 0      3 r 0       1 r 1       0 r 1
+         ---         ---         ---         ---         ---         ---         ---
+        2|99        2|49        2|24        2|12        2|6         2|3         2|1
+          8
+          -
+          19
+          18
+
+    e. 1
+
+34. decimal to hex
+
+    a. 1066 = 42A
+             66 r 10        4  r 2      0 r 4
+          ------          ---         ---
+        16|1066         16|66       16|4
+            96
+            --
+            106
+
+    b. 1939 = 793
+            121 r 3          7 r 9         0 r 7
+          -----           ----            ---
+        16|1939         16|121          16|7
+           16              112
+           --              ---
+            33             009
+            32
+            --
+             19
+
+
+    c. 1
+
+    d. 998 = 3DC                                         X(3E6) math error
+            61 r 12         3 r 13     0 r 3
+          ----            ----         ---
+        16|988          16|61       16|3
+           96              48
+           --              --
+            28             13
+            16
+            --
+            12
+
+    e. 43 = 2B
+            2 r 11     0 r 2
+          ----        ---
+        16|43       16|2
+           32
+           --
+           11
+
+35. A,B,C,D,E,F,G,H 
+
+36. decimal to base 18
+
+    a. 1066 = 354
+
+             59 r 4         3 r 5      0 r 3
+          -----           ----        ---
+        18|1066         18|59       18|3
+            90             54
+            --             --
+            166             5
+            162
+            ---
+            004
+
+    b. 99099 = GHF9
+            5505 r 9        305 r 15        16  r 17        0 r 16
+          -------         -----           -----           ---
+        18|99099        18|5505         18|305          18|16
+           90              54              18
+           --              --              --
+            90              105            125
+                             90            108
+                                           ---
+                                            17
+    c. 1
+
+37. Octal addition
+
+    a.  1
+        770
+        665
+        +++
+       1655
+    
+    b.
+        101
+        707
+        +++
+       1010
+    
+    c.
+         1
+        202
+        607
+        +++
+       1011
+
+38. Hex addition
+
+    a. 
+
+        19AB6
+           43
+        +++++
+        19AF9
+    
+    b.
+         1
+        AE9
+          F 
+        +++
+        AF8
+    
+    c.
+         11
+        1066
+        ABCD
+        ++++
+        BC33
+
+39. Octal subtraction
+
+    a.
+        078
+        1066
+         776
+        ----
+          70
+
+    b.
+         12
+        1234
+         765
+        ----
+         247
+    
+    c.
+        7766
+        5544
+        ----
+        2222
+
+40. Hex subtraction
+
+    a. 
+
+        ABC 
+        111
+        ---
+        9AB
+    
+    b.    16
+         8716
+        9988
+          AB 
+        ----
+        98DD
+    
+    c.
+        A9F8
+        1492
+        ----
+        9566
+
+41. Cheaper to make, simpler to design and there is less room for error (with fluctuating signal strengths within circuits).
+
+42. 8
+
+43. 8
+
+44. beacause they only need to display 1 byte of info at a time.
+
+45. Because it is the fundamentals behind computers and computer science. And because virtually all computers use the binary system which is a base number system.
+
+46. (((13*13*13*10) + (13*13*11) + 13*9) + 8) = 2395

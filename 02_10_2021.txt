@@ -1,0 +1,29 @@
+Abtract Data Type (material in Lab 6 / Chapter 8)
+
+Stack - a stack is an abstract composite structure in which accesses are made at only one end.
+    it's called LIFO: last in first out 
+    items are removed or added much like using Undo (ctrl+Z)/ Redo in this program. or using back on the browser.
+
+    PUSH - adding an item to a stack is called a push 
+    POP - removing an item form a stack is called a pop 
+
+Queues - A queue is an abstract structure in which items are entered at one end and removed from the other end.
+    It is called FIFO: first in first out.
+    like waiting in line at a bank.
+    inseration is made at the rear of the queue and removals are made from the front of the queue.
+
+    Enque - for insertation ie. Enque(myQueue, value)
+    Dequeue - for deletion we use Dequeue(myQueue, value)
+
+Binary Trees 
+    A binary tree is an abstract structure in which each node is capable of hacing two successor nodes called children.
+    The begining of the tree is a unique starting node called the root.
+    A unique path (series of nodes) exists from the root to every other node.
+
+    Binary Search Trees
+        A binary search tree has the shape property of a binary tree. 
+        A node in a binary search tree can have zero,one or two children.
+        The value in any node is greater than the value in anynode in its left subtree and less than the value in any node in its right subtree.
+        A tree is analogous to an unordered list.
+        A binary search tree is like a sorted list.
+        starts with the first number at the tree and organizes the other values branching off with smaller and larger values.

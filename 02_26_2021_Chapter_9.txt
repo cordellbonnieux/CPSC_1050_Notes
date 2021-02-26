@@ -1,0 +1,54 @@
+Chapter 9 - Object Oriented Design and High-Level Programming Languages
+
+9.1 Object Oriented Methodology
+
+    Object - An entity or thing that is relevant in the context of a problem.
+    Object Class (Class) - A description of a group of objects with similar properties and behaviours.
+    Fields - Named properties of a class. 
+    Method - A named algorithm that defines one aspect of the behaviour of the class.
+
+    Design Methodology 
+    a. Brainstorming (what classes, functions etc)
+    b. Filtering (reduce redundancies, merge classes or get rid of non essentials)
+    c. Scenarios (assign responsibilities to classes)
+
+    Encapsulation - Bundling data and actions so that the logical properties of data and actions are seperated from the implementation details.
+
+    From the Text book:
+    ""Grady Booch puts it this way:
+    “Read the specification of the software you want to build. Underline
+    the verbs if you are after procedural code, the nouns if you aim for an
+    object-oriented program.” 2
+
+    We propose that you circle the nouns and underline the verbs as a
+    way to begin. The nouns become objects; the verbs become operations. In
+    a top-down design, the verbs are the primary focus; in an object-oriented
+    design, the nouns are the primary focus.""
+
+9.2 Translation Process
+
+    Compiler - A program that translates a high-lvel language program into machine code.
+    Interpreter - A program that inputs a program in a high-level language and directs the computer to perform the actions specified in each statement. (like repl.it enviroment)
+
+    Byecode - A standard machine language into which Java source code is compiled.
+
+9.4 Functionality in High Level Languages
+
+    Boolean Expression - A sequence of identifiers, separated by compatible operators, that evaluates to either true, or false.
+
+    Data Typing:
+    Strong Typing - Each variable is assigned a type, and only values of that type can be stored in the variable. 
+    Data Type - A description of the set of values and the basic set of operations that can be applied to values of the type.
+
+    Simple/Atomic Data Types:
+    Integers 
+    Reals
+    Characters
+    Boolean
+
+    Strings - Composite data type, technically. But often considered Simple.
+
+    Declaration - A statement that associates an identifier with a variable, an action, or some other entity within the language that can be given a name so that the programmer can refer to that item by name.
+    Reserved Word - A word in a language that has special meaning; it cannot be used as an identifier.
+
+    

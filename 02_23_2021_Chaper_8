@@ -1,0 +1,115 @@
+Chapter 8       Abstract Data types And SubPrograms 
+
+8.1 What is an Abstract Data Type?
+
+ADT - Abstract Data Type 
+    A container whose properties (data and operations) are specified independently of any particular implementation.
+
+Data Structure - the implementation of a composite data field in an abstract data type.
+
+Containers - Objects whose role is to hold and manipulate other objects. 
+
+
+8.2 Stacks
+
+Like an array, but uses "last in first out"
+
+Has no length property BUT has isEmpty() method.
+
+pop() to remove top item
+
+push() to add item to top
+
+
+8.3 Queues
+
+Like an array or stack, but uses "first in first out". (like a lineup at a store, or... a queue).
+
+insertations are made at the rear of the queue.
+
+removals are made from the front. 
+
+Enque, input etc to add an item to the back of a queue
+
+Deque, delete, remove etc to remove an item from the front of the queue. 
+
+
+8.4 Lists
+
+A list is basically an abstract way of thinking of an array.
+
+Items may be deleted or inserted. 
+
+Use getNext() to view the next item in sequence.
+    If the list is unsorted, the items display in the order they were added in.
+    If sorted, the lsit is.... sorted!
+
+Length, isEmpty etc are methods of a list. 
+
+A list may also be visualized as a Linked Structure.
+    A Linked Structure : An implementation of a container where the items are stored together with the information on where the next item can be found.
+
+A list may be ordered or unordered (like in HTML or Word).
+
+
+8.5 Trees 
+
+Binary Tree 
+    An abstract composite structure with a unique starting node called the root, in which each node is capable of having
+    two child nodes and in which a unique path exists from the root to every other node.
+
+    Root Node
+        The unique starting node in a tree. Not the child of any node.
+
+    Leaf Node 
+        A node in a binary tree which has no children.
+
+
+Binary Search Trees 
+    An abstract tree created from a binary search, which has the root node being the middle value. 
+    It's two children are the middle values of the two remaining sublists, this process continues until a tree is made.
+
+    example:    1,5,6,7,8,10,15,16,17,18,19,21
+
+        It's binary Search tree:    
+
+                    15
+                   /  \
+                  7   17
+                / |   | \
+               5  8   16 19 
+              / |  \     / \
+             1  6   10  18  21
+
+
+8.6 Graphs
+
+Graph - A data structure that consists of a set of edges that relate the nodes to each other.
+
+Vertex - A node in a graph. 
+
+Edge (arc) - A pair of verticies representing a connection between two nodes in a graph.
+
+Undirected Graph - A graph in which the edges have no direction.
+
+Directed Graph (digraph) - A graph in which each edge is directed from one vertex to another (or the same) vertex.
+
+Adjacent Vertices - Two verticies that are connected by an edge.
+
+Path - A sequence of vertices that connects two nodes in a graph. 
+
+
+8.7 Subprograms 
+
+Parameter List - A mechanism for communicating between two parts of a program.
+
+Parameters - The identifiers listed in the parentheses beside the subprogram name; somtimes called formal parameters.
+
+Arguments - The identifiers listed in parenthese on the subprogram call; sometimes called actual parameters.
+
+Value and Reference Parameters 
+    Value Parameter - A parameter that expects a copy of its argument to be passed by the calling unit.
+    Reference Parameter - A parameter that expects the address of its argument to be passed by the calling unit. 
+
+
+

@@ -1,0 +1,115 @@
+Chapter 3 Practice Test - Review
+Feb 18 2021
+
+1. A
+2. B
+3. A 
+4. A 
+5. B 
+6. B 
+7. A 
+8. B 
+9. A 
+10. A 
+11. B 
+12. A 
+13. A 
+14. A 
+15. A 
+16. A 
+17. B 
+18. A 
+19. A 
+20. A 
+
+21. E
+22. A 
+23. B 
+24. F 
+25. C 
+26. D 
+
+27. Because people need to share things over the internet. 
+And the more data you send over the internet, the more costly and coumbersome it becomes.
+
+28. Lossless compression means that none of the original data is lost after compression.
+Lossy is the opposite, data is lost after compression.
+
+29. Because analog data is infinite, and a computer's memory is not.
+A sampled interpretation of real world data must be made for a computer to understand it.
+
+30. Analog.
+
+31. To sample it and convert those samples into binary/digital data.
+
+32. It is the sampling of analog signals and converting them into digital data.
+
+33. 
+    a. 16 
+
+    b. 32
+
+    c. 64
+
+    d. 128
+
+34. W = 17, X = 28, Y = (-29), Z = (-13)
+    a. 28
+      -29
+      ++++
+       -1
+
+    b.  28
+        17
+        +++
+        45
+
+    c.  -13
+         17
+        ++++
+          4
+    d.  -29
+        -13
+        ++++
+        -42
+
+    e.  17
+       -13
+       ----
+        30
+
+    f.  28
+        17
+        --
+        11
+
+    g.  -29
+         17
+         ++
+         -12
+
+    h.  -13
+        -29
+        ---
+         16
+
+35. A = 5, B = (-7)
+
+    a. 5 + (-7) = (-2)
+
+    b. 5 - (-7) = 12
+
+    c. 5 + (-7) = (-2)
+
+    d. (-7) - 5 = (-12)
+
+36. k = 6 (page 63)
+
+    a.How many positive integers can be represented?
+    
+    b.How many negative integers can be represented?
+    
+    c.Draw the number line showing the three smallest and largest
+positive numbers, the three
+smallest and largest negative
+numbers, and zero.
