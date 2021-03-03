@@ -1,0 +1,62 @@
+
+
+
+Chapter 5 Computer Architecture
+
+    Super Simple CPU 
+
+        IR - Instruction Register - contains the instruction that is being executed.
+
+        PC - Program Count - contains the address of the next instruction to be executed.
+
+        ACC - Accumulator - Stores intermediate arithmatic and logic results.
+
+    Von Neuman Architecture 
+
+        Instructions and data are both stored in the memory unit.
+
+        The processor units are seperate from the storage units. 
+
+        CPU - Central Processing Unit has two parts.
+            1. Arithmetic Logic Unit - ALU
+            2. Control Unit 
+
+        Control Unit - ensures all other components work fine. Has 3 special registers.
+            1. Instruction Register 
+            2. Program Count 
+            3. Accumulator 
+        
+        Arithmetic / Logic Unit - Performs basic arithmetic operations such as adding,
+            subtracting, multiplying and dividing two numbers.
+
+            Performs logical operations such as AND, OR and NOT.
+
+            Most modern ALUs have a small amount of special storage units called registers. 
+
+
+    RAM : Random Access Memory - Not saved when power is off(volatile), but much faster.
+        The location of each can be changed and accessed.
+
+    ROM : Read Only Memory - Saved when power is off, much slower.
+        The location can be accessed but not changed.
+
+
+    Cache Memory : Small amount of fast access memory into which copies of frequently used data are stored.
+        Before a main memory access is made the CPU checks whether the data is stored in the chache memory.
+
+    
+    Memory Hierarchy 
+      /\                                                     capacity
+      ||        CPU Registers         <-|                       ||
+      ||        Cache Memory          (internal)                ||
+      ||        Primary/main Memory   <-|                       ||
+      ||                                                        ||
+      ||        Secondary Memory / Disks (external)             ||
+      ||                                                        \/
+    speed  
+      &
+     cost
+
+
+
+

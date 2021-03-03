@@ -51,4 +51,36 @@ Chapter 9 - Object Oriented Design and High-Level Programming Languages
     Declaration - A statement that associates an identifier with a variable, an action, or some other entity within the language that can be given a name so that the programmer can refer to that item by name.
     Reserved Word - A word in a language that has special meaning; it cannot be used as an identifier.
 
+    Control Structure - An instruction that determines the order in whuch other instructions in a program are executed.
+
+    Asynchronous - Not occurring at the same moment in time as some specific operation of the computer; in other words not synchronized with the program's actions.
+
+9.5 Functionality of Object-Oriented Languages
+
+    Encapsulation (second definition) - A language feature that enforces information hiding.
+    Object (problem-solving phase) - An entity or thing that is relevant in the context of a problem.
+    Class (implementation phase) - A pattern for an object. 
+    Object class (class) (problem-solving phase) - A description of a group of objects with similar properties and behaviours.
+    Onject (implementation phase) - An instance of a class. 
+
+    Instantiate - To create an object from a class.
+
+    Inheritance - A mechanism by which one class acquires the properties -- data fields and methods -- of another class.
+
+    Superclass - A parent class 'i.e. Person'
+    Subclass - A class of object which inherits the properties of it's parent class. 'i.e. Student, which inherits the properties of "Person"'.
+
+    Polymorphism - the ability of a language to determine at runtime which of several possible methods will be executed for a given invocation.
+
+
+
+Summary Notes:
+
+Object Oriented programs are characterized by the following constructs:
+    a. Encapsultaion - A language feature that enforces informatuon hiding that is implemented using the class construct.
+    b. Inheritance - A language feature that allows one class to inherit the properties and behaviours of another class.
+    c. Polymorphism - The ability of a language to disambiguate between operations with the same name.
     
+
+
+

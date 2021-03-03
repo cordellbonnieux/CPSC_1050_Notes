@@ -1,0 +1,86 @@
+
+
+
+
+
+Chapter 3 - Representing data in a computer.
+
+        -Computers are built to work using the binary number system.
+
+        -A value can be on or off, true or false. Also known as a Boolean.
+
+        Byte : A collection of 8bits.
+
+        Encoding System: Set of rules that translates characters, numbers and symbols into 0s and 1s.
+            eg. ASCII (uses 1byte) or UNICODE (uses 2bytes)
+
+
+        There are two approaches to represent negative numbers in binary.
+
+
+    Signed Magnitude : Uses the leftmost bit to indicate the sign; 1 is negative, 0 is positive.
+        (byte size = -127 to 127)
+
+        eg. 10000010 = -2 in signed magnitude binary.
+
+    Two's Compliment : Half of the numbers are used to represent positive numbers and 
+        the other half are used for negative numbers.  
+        (byte size = -128 to 128)
+        
+        "For example, with 4 bits we can represent 15 numbers: the first half represent 0 to 7, the second half represent -8 to -1."
+
+        eg. 111111110 = -2 in two's compliment binary.
+
+
+
+
+
+    Representing Real Numbers
+
+        A real number is a number with a whole part and a fractional part either of which may be zero.
+            eg. 104.32, 0.999999, 357.0, and 3.141
+        
+
+    How to convert a real number(decimal) to binary
+
+        eg. 24.125_10 = ?_2 
+
+        24_10 = 11000_2 
+
+        0.125 * 2 = 0.25 -> 0
+        0.25 * 2 = 0.50 -> 0
+        0.5 * 2 = 1.00 -> 1
+
+        24.125_10 = 11000.001_2 
+
+
+        Sometimes, you never get a 0.00, so like in math go 6 places past the radix point.
+
+
+
+
+    Data Compression
+
+        Lossy - Data is lost in compression, in order to achive greater compression ratios.
+
+        Lossless - No data is lost during compression, though it produces a larger compressed file.
+
+
+        Text Compression Methods :
+
+            1. Keyword Encoding : Frequently used words are replaced with a single character.
+
+            2. Run Length Encoding : Replaces a long sequence of the same character (greater than 4 in a row)
+                with *, then the character to repeat then the times to repeat it.
+                eg. aaaaaaaaaabbbcccccccc   = *a10bbb*c8
+            
+            3. Huffman Encoding : Shorter codes are assigned to frequently used characters. 
+
+                eg. BLOOD encodes to 17 bits when compressed with this method. 
+                    Otherwise, if uncompressed, the characters in BLOOD would represent 40 bits. 
+                    This makes the Compression Ratio 17/40.
+
+        Compression Ratio : The compressed file size divided by the non-compressed file size.
+            
+
+    

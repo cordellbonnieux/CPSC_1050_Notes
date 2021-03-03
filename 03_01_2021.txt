@@ -1,0 +1,38 @@
+Chapter 10 - Operating Systems
+
+    CPU Scheduling
+        - First come, first served.
+        - Average turn around time - to find we draw a Gantt Chart. 
+            ( x + y + z + w ) / 4 = average turn around time 
+        
+        Shortest Job Comes Next
+
+        Round Robin
+        - Each process runs for a specified time slice and moves from the running state to the readt state to await its next turn if not finished.
+        - Time slice: The amount of time each process recieves before it returns to the ready state to allow another process to run.
+
+
+
+
+
+Chapter 11 - File Systems and Directories
+
+    Path - location of file or directory
+    Relative Path - files or subdirectories that share a parent directory
+
+    File types - The kind of information contained in a document.
+
+    A disk drive is organized as a stack of platters where each platter is divided into tracks and sectors.
+
+
+    - Seek time the time it takes for the disk area to be read by the laser.
+
+    Disk Scheduling - request types.
+    FCFS - first come, first serve
+    SSTF - shortest seek time first. Goes to the closest number from where it currently is.
+    SCAN - As soon as the request is under the head, it is processed in the direction it is moving. (the one that's used)
+    
+
+
+Chapter 12 - Information Systems
+
