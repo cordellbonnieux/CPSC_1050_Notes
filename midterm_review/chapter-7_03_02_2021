@@ -1,0 +1,40 @@
+
+
+Chapter 7
+
+    Search Algorithms 
+
+        - Sequential Search : examines each item in turn and compares it to the search item.
+            If it matches, we have found it.
+            If not we look at the next item in the array.
+            If the array is sorted, and the item is not found at it's expected position.
+                Terminate the search there.
+        
+        - Binary Search : Search begins ar the middle of the arry and finds the item or
+            eliminates half of the unexamined items. Process is repeated on the half where the item might be.
+            The array must be sorted. 
+
+            To calculate the middle you take the index of the first item (starts with 0!) and index of the last item 
+                add them together then divide by 2. that is your start point. 
+
+
+    Sorting Algorithms 
+
+        - Selection Sort : Arranging items in a collection so that there is an ordering either ascending or descending. 
+            The smallest item is selected from the unsorted part and swapped with the leftmost item of the unsorted part.
+
+        - Bubble Sort : Bubbles the smallest item to the right location. 
+            a. start with the last list element.
+            b. compare sucessive pairs of elements.
+            c. swap whenever the bottom element of the pair is smaller than the one above it. 
+
+        - Insertion Sort : We assume the elements arrive one by one at the end of the array. When a new item arrives, 
+            we compare it with existing elements, swap if needed, and place it at the correct location.
+
+        - Quick Sort : We pick the first elementsas the pivot and move the other elements in a way that all the smaller values
+            go to the left of the pivot and all the bigger values go to the right of the pivot. We repeat the same procedure
+            for the array on the left of the pivot until it gets sorted and then repeat for the array on the 
+            right of the pivot unril it gets sorted.
+
+            
+            
