@@ -1,0 +1,97 @@
+10.1 Roles of an Operating System
+
+    Application Software : Programs that help us solve real world problems.
+
+    System Software : Programs that manahe a computer system and interact with hardware.
+
+    Operating System : System software that manages computer reasources and provides an interface for system interaction.
+
+    Multiprogramming : The technique of keeping multiple programs in main memory at the same time, competing for the CPU.
+
+    Memory Management : The act of keeping track of how and where programs are loaded in main memory.
+
+    Process : The dynamic representation of a program during executing. 
+
+    Process Management : The act of keeping rrack of information of active processes. 
+
+    CPU Scheduling : The act of determining ehich process in memory is given access to the CPU so that it may execute. 
+
+    Timesharing : A system in which CPU time is shared among multiple interavtive users at the same time.
+
+    Virtual Machine : The illusion created by a timesharing system that each user has a dedicated machine. 
+
+    Mainframe : A large multiuse computer often associated with early timesharing systems.
+
+    Dumb Terminal : A monitor and keyboard that allowed the user to access the mainframe computer in early timesharing systems.
+
+    Real-time System : A system in which response time is crucial given the nature of the application domain. 
+
+    Response time : The time delay between receiving a stimulus and producing a response. 
+
+
+
+10.2 Memory Management 
+
+    Logical Address : A reference to a stored value relative to the program making the reference. 
+
+    Physical Address : An actual address in the main memory device. 
+
+    Address binding : The mapping from a logical address to a physical address. 
+
+    Single Contiguous Memory Management : The approach to memory management in which a program is loaded into one continuous area of memory. 
+
+    Fixed-Partition Technique : The memmory management technique in which memory is divided into a specific number of partitions into which programs are loaded. 
+
+    Dynamic-Partition technique : The memory management technique in which memory is divided into partitions as needed to accommodate programs. 
+
+    Base Register : A register that holds the beginning address of the current partition. 
+
+    Bounds Register : A register that holds the length of the current partition. 
+
+    Paged Memory Technique : A memory management technique in which processes are divided into fixed-size pages and stored in memory frames when loaded.
+
+    Frame: A fixed-size portion of main memory that holds a process page.
+
+    Page : A fixed size protion of a process that is stored into a memory frame. 
+
+    Page-Mao Table (PMT) : The table used by the operating system to keep track of the page/frame relationships.
+
+    Demand Paging : An extension to paged memory management in which pages are brought into memory only when referenced (on demand). 
+
+    Page Swap : Bringing in one page from secondary memory, possibly causing another to be removed. 
+
+    Virtual Memory : The illusion that there is no restriction on program size because and entire process need not be in memory at the same time. 
+
+    Thrashing : Inefficient processing caused by constant page swapping. 
+
+
+
+10.3 Process Management 
+
+    Process States : The conceptual stages through which a process moves as it is manahed by the operating system. 
+
+    Process Control Block (PCB) : The data structure used by the operating system to manage information about a process. 
+
+    Context Switch : The exchange of register information that occurs when one process is removed from the CPU and another takes its place. 
+
+
+
+10.4 CPU Scheduling 
+
+    Nonpreemptive Scheduling : CPU scheduling that occurs when the currently executing process gives up the CPU voluntarily.
+
+    Preemptive Scheduling : CPU scheduling that occurs when the operating system decides to favour another process, preempting the currently executing process. 
+
+    Turnaround Time : The CPU-scheduling metric that measures the elapsed time between a process's arrival and it's ultimate completion. 
+
+    First Comes First Served Scheduling :
+
+    Shortest Job Next Scheduling : 
+
+    Round Robin Scheduling : 
+
+    Time Slice : The amount of time given to each process in the round-robin CPU scheduling algorithm. 
+
+
+
+
